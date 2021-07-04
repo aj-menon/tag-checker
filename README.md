@@ -11,15 +11,18 @@ Typically every tag has an opening tag of the form `<TAG>` and a closing tag of 
 of text can be bracketed as above. Tags can then be combined to achieve more than one effect on a particular piece
 of text simply by nesting them properly, for instance:
 
-    `<CENTER><B>This text is centred and in boldface</B></CENTER>`
+    <CENTER><B>This text is centred and in boldface</B></CENTER>
 
 ## The Problem
 
 Two of the most common mistakes when tagging text are:
 
 - Getting the nesting wrong:
+
   `<B><CENTER>This should be centred boldface, but the tags are wrongly nested</B></CENTER>`
+
 - Forgetting a tag:
+
   `<B><CENTER>This should be centred boldface, but there is a missing tag</CENTER>`
 
   This program checks that all the tags ina given piece of text (a paragraph) are correctly nested,a nd that there are no missing ot extra tags.

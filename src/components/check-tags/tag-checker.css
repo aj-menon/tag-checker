@@ -1,0 +1,40 @@
+.controls button {
+	height: 38px;
+	background-color: #0091ce;
+	border: 1px solid #0070ac;
+	color: white;
+	padding: 0px 20px;
+	margin-left: 20px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.container textarea.textinput {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 15px;
+}
+.container .title {
+	font-weight: bold;
+	font-size: 22px;
+	color: #555;
+	margin: 20px 15px;
+}
+.container .result-msg {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 10px 0px;
+	padding: 12px;
+	border-radius: 5px;
+}
+.container .result-msg.red {
+	color: #d8000c;
+	background-color: #ffd2d2;
+}
+.container .result-msg.green {
+	color: #4f8a10;
+	background-color: #dff2bf;
+}
+.container .result-msg.info {
+	color: #00529b;
+	background-color: #bde5f8;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./tag-checker.css";
+import "./styles.css";
 export default class TagChecker extends React.Component {
 	constructor(props) {
 		super();
@@ -94,10 +94,14 @@ export default class TagChecker extends React.Component {
 					cols={"55"}
 					value={this.state.inputText || ""}
 					name="inputText"
+					data-testid="text-para"
 					onChange={this.handleTextChange}
 				/>
 				<div className="controls">
-					<button type="submit" onClick={this.handleCheckTags}>
+					<button
+						type="submit"
+						onClick={this.handleCheckTags}
+						data-testid="submit">
 						Check
 					</button>
 					<button type="reset" onClick={this.handleResetForm}>
@@ -105,9 +109,11 @@ export default class TagChecker extends React.Component {
 					</button>
 				</div>
 
-				<div className={messageClassName}>
-					<p>{this.state.message && this.state.message}</p>
-				</div>
+				{this.state.message && (
+					<div className={messageClassName}>
+						<p data-testid="message-text">{this.state.message}</p>
+					</div>
+				)}
 			</div>
 		);
 	}

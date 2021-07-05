@@ -62,3 +62,11 @@ JavaScript and ReactJS
 ```
 npm start
 ```
+
+### Test
+
+Run the following command from `/src/components/check-tags/__tests__`
+
+```
+ npm test
+```

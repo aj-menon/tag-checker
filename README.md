@@ -55,7 +55,7 @@ JavaScript and ReactJS
   ```
   cd <project-root-folder>
   npm install
-   // for testing 
+  
   npm install @testing-library/user-event @testing-library/dom --save-dev
   ```
 
